@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ToDo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>To Do App</h1>
+  </header>
+
+  <!-- FORM -->
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Task Title" required>
+
+    <select id="priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <input type="date" id="dueDate">
+
+    <button type="submit">Add Task</button>
+  </form>
+
+  <!-- SEARCH -->
+  <input type="text" id="search" placeholder="Search task...">
+
+  <!-- TASKS -->
+  <div id="tasksContainer"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 ToDo App</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

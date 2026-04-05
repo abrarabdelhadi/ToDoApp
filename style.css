@@ -1,0 +1,35 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  padding: 20px;
+  background: white;
+  display: flex;
+  gap: 10px;
+}
+
+#tasksContainer {
+  padding: 20px;
+}
+
+.task {
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
