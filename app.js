@@ -1,4 +1,4 @@
-const baseURL = "https://your-project-id.firebaseio.com/tasks";
+const baseURL = "https://todoapp-b837a-default-rtdb.firebaseio.com/";
 
 // ADD TASK
 document.getElementById("taskForm").addEventListener("submit", function(e) {
@@ -13,7 +13,7 @@ document.getElementById("taskForm").addEventListener("submit", function(e) {
   };
 
   fetch(`${baseURL}.json`, {
-    method: "POST",
+    method: "POST", 
     body: JSON.stringify(task)
   }).then(() => getTasks());
 
