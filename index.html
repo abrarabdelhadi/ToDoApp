@@ -7,12 +7,10 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header>
     <h1>To Do App</h1>
   </header>
 
-  <!-- FORM -->
   <form id="taskForm">
     <input type="text" id="title" placeholder="Task Title" required>
 
@@ -21,19 +19,22 @@
       <option value="medium">Medium</option>
       <option value="high">High</option>
     </select>
-
-    <input type="date" id="dueDate">
+  
+   <select id="list">
+      <option>Work</option>
+     <option>Study</option>
+     <option>Personal</option>
+    </select>
+  
+    <input type="date" id="Date">
 
     <button type="submit">Add Task</button>
   </form>
 
-  <!-- SEARCH -->
   <input type="text" id="search" placeholder="Search task...">
 
-  <!-- TASKS -->
   <div id="tasksContainer"></div>
 
-  <!-- FOOTER -->
   <footer>
     <p>2026 App</p>
   </footer>
