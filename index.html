@@ -7,38 +7,64 @@
 </head>
 <body>
 
-  <header>
-    <h1>To Do App</h1>
-  </header>
+  <!-- LOGIN / REGISTER -->
+  <div id="authBox" class="login-box">
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
 
-  <form id="taskForm">
-    <input type="text" id="title" placeholder="Task Title" required>
+    <button onclick="registerUser()">Register</button>
+    <button onclick="loginUser()">Login</button>
+    <button onclick="logoutUser()">Logout</button>
+  </div>
 
-    <select id="priority">
-      <option value="low">Low</option>
-      <option value="medium">Medium</option>
-      <option value="high">High</option>
-    </select>
-  
-   <select id="list">
-      <option>Work</option>
-     <option>Study</option>
-     <option>Personal</option>
-    </select>
-  
-    <input type="date" id="Date">
+  <!-- MAIN APP -->
+  <div id="appBox" style="display: none;">
 
-    <button type="submit">Add Task</button>
-  </form>
+    <header>
+      <h1>To Do App</h1>
+    </header>
 
-  <input type="text" id="search" placeholder="Search task...">
+    <!-- WEATHER -->
+    <div id="weatherBox" class="weather-box">
+      <p>Loading weather...</p>
+    </div>
 
-  <div id="tasksContainer"></div>
+    <!-- TASK FORM -->
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task Title" required>
 
-  <footer>
-    <p>2026 App</p>
-  </footer>
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
 
-  <script src="app.js"></script>
+      <select id="list">
+        <option>Work</option>
+        <option>Study</option>
+        <option>Personal</option>
+      </select>
+
+      <input type="date" id="Date">
+
+      <button type="submit">Add Task</button>
+    </form>
+
+    <!-- SEARCH -->
+    <input type="text" id="search" placeholder="Search task...">
+
+    <!-- TASKS -->
+    <div id="tasksContainer"></div>
+
+    <footer>
+      <button onclick="logoutUser()">Logout</button>
+      <p>2026 App</p>
+    </footer>
+
+  </div>
+
+  <!-- IMPORTANT -->
+  <script type="module" src="app.js"></script>
+
 </body>
 </html>
